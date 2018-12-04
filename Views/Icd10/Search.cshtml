@@ -1,0 +1,49 @@
+﻿@model  List<FMBPublic.Model.Icd10SearchResponse>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="x_title">
+    <h2>Icd 10 results:</h2>
+    <h3>Note:rows in blue are header rows and not used for billing</h3>
+</div>
+<div class="x_panel">
+
+    <div class="x_content">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    @if (item.IsHeader == 1)
+                    {
+                        <tr class="bg-white">
+                            <td>@Html.DisplayFor(modelItem => item.ICD10Code)</td>
+                            <td>@Html.DisplayFor(modelItem => item.LongDescription)</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr class="bg-info">
+                            <td>@Html.DisplayFor(modelItem => item.ICD10Code)</td>
+                            <td>@Html.DisplayFor(modelItem => item.LongDescription)</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+

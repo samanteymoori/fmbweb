@@ -1,0 +1,432 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Document Title -->
+    <title>Free Medical Billing</title>
+    <!-- FontsOnline -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <!-- StyleSheets -->
+    <link id="css-lib" href="css/lib.css" rel="stylesheet">
+    <link id="css-preset" href="css/style.css" rel="stylesheet">
+
+
+</head>
+<!--/head-->
+
+<body id="body" class="page-on-scroll">
+    <!-- <script type='text/javascript'>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll').fadeIn();
+                } else {
+                    $('#scroll').fadeOut();
+                }
+            });
+            $('#scroll').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script> -->
+    <a href="#" id="scroll" style="display: none;"><i class="fa fa-angle-up"></i></a>
+    <!-- Header -->
+    <header class="header top-nav-collapse" style="display: none;">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!-- END - HEADER -->
+    <!--======= SLIDER =========-->
+    <div id="slider" class="slider">
+        <div id="wrapper" class="outer">
+            <!-- LAYER NR. 1 -->
+            <div class="inner">
+                <div class="image">
+                    <img src="images/slider1.jpg" class="img-responsive" id="bg" alt="slider">
+                </div>
+                <div class="captions">
+                    <div class="sub-capt text-center">
+                        <p><br /></p>
+                        <img class="logo-img animated fadeInRightBig" src="images/logo.png" alt="FMB Logo" width="350" style="margin: 0 auto 30px;background: #fff;padding: 20px;border-radius: 5px;">
+                        <p class="sub-title animated fadeInRightBig">Welcome to </p>
+                        <h1 class="title animated fadeInLeftBig">Free Medical Billing</h1>
+                        <div class="btn-caption animated fadeInUp">
+                            <a class="btn btn-lg" href="#" target="_blank"><span class="fa fa-user-md"></span>&nbsp;&nbsp;Provider Login</a>
+                            <a class="btn btn-lg" href="#" target="_blank"><span class="fa fa-android"></span>&nbsp;&nbsp;Request Demo</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LAYER NR. 2 -->
+            <div class="inner">
+                <div class="image">
+                    <img src="images/slider2.jpg" class="img-responsive" id="bg" alt="slider">
+                </div>
+                <div class="captions">
+                    <div class="sub-capt text-center">
+                        <p class="sub-title animated fadeInRightBig">Welcome to </p>
+                        <h1 class="title animated fadeInLeftBig">Free Medical Billing</h1>
+
+                        <div class="btn-caption animated fadeInUp">
+                            <a class="btn btn-lg" href="#" target="_blank"><span class="fa fa-user-md"></span>&nbsp;&nbsp;Provider Login</a>
+                            <a class="btn btn-lg" href="#" target="_blank"><span class="fa fa-android"></span>&nbsp;&nbsp;Request Demo</a>
+                            <a class="btn btn-lg" href="#" target="_blank"><span class="fa fa-drivers-license"></span>&nbsp;&nbsp;Create and Account</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-in animated fadeInUp">
+            <a class="pointer" href="#about-us"></a>
+        </div>
+    </div>
+    <!-- END - SLIDER  -->
+    <!-- ABOUT US -->
+    <section id="appointment" class="clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="sector">
+                    <h1 class="title">About Us</h1>
+                    <p class="description">Duis tincidunt diam nisl, a condimentum dolor efficitur et. Ut at quam sagittis, tincidunt lacus vel, fermentum ipsum</p>
+                </div>
+                <div class="outer">
+                    <div class="inner col-md-6 col-lg-6 clearfix">
+                        <div class="welcome">
+                            <div class="points">
+                                <ul>
+                                    <h2 class="title">Welcome to <span> Free Medical Billing</span></h2>
+                                    <p class="description">Cras eget commodo dolor. Nunc at feugiat nunc. Mauris sem velit, eleifend in quam non, pharetra sodales ex. Pellentesque id turpis quam. Proin faucibus orci a pharetra porttitor. Nam ornare est non vehicula mattis. Maecenas euismod Ut at quam sagittis, tincidunt lacus vel, duos lorem ipsum fermentum</p>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </div>
+                                        <h5 class="point-title">
+                                            <a onclick="window.location='NPI'" href="/NPI" target="_blank">NPI Search</a>
+                                        </h5>
+
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </div>
+                                        <h5 class="point-title">
+                                            <a onclick="window.location='Icd10'" href="/Icd10" target="_blank">Icd10 Search</a>
+                                        </h5>
+
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </div>
+                                        <h5 class="point-title"><a onclick="window.location='Cms'" href="/Cms" target="_blank">Cms 1500</a></h5>
+                                    </li>
+                                    @*<li>
+                                        <div class="icon">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        </div>
+                                        <h5 class="point-title">Cras eget commodo dolor</h5>
+                                    </li>*@
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="inner col-md-6 col-lg-6 clearfix">
+                        <div class="images">
+                            <img class="img-responsive" src="images/about.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END - ABOUT US -->
+    <!-- SERVICES -->
+    <section id="services" class="clearfix">
+        <div class="srv">
+            <div class="container">
+                <div class="row">
+                    <div class="our-services">
+                        <!-- Heading -->
+                        <div class="sector">
+                            <h1 class="title">Our services</h1>
+                            <p class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        <div class="details text-center">
+                            <!-- Service 1 -->
+                            <div class="inner col-md-4 col-lg-4">
+                                <div class="icon">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </div>
+                                <h4 class="title">Medical Billing</h4>
+                                <p>Duis tincidunt diam nisl, a condimentum dolor efficitur et. Ut at quam sagittis, tincidunt lacus vel, fermentum ipsum</p>
+                            </div>
+                            <!-- Service 2 -->
+                            <div class="inner col-md-4 col-lg-4">
+                                <div class="icon">
+                                    <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                </div>
+                                <h4 class="title">Medical Billing Outsourcing</h4>
+                                <p>Duis tincidunt diam nisl, a condimentum dolor efficitur et. Ut at quam sagittis, tincidunt lacus vel, fermentum ipsum</p>
+                            </div>
+                            <!-- Service 3 -->
+                            <div class="inner col-md-4 col-lg-4">
+                                <div class="icon">
+                                    <i class="fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <h4 class="title">Revenue Cycle Management</h4>
+                                <p>Duis tincidunt diam nisl, a condimentum dolor efficitur et. Ut at quam sagittis, tincidunt lacus vel, fermentum ipsum</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END - SERVICES -->
+    <!-- PRICE TABLE -->
+    <section id="price-table">
+        <div class="container group">
+            <!-- Heading -->
+            <div class="sector clear">
+                <h1 class="title">Our Pricing</h1>
+                <p class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div class="grid-1-5 col-md-4">
+                <h2>Basic</h2>
+                <h3><span class="uppercase">Free</span></h3>
+                <p>10,000 monthly visits</p>
+                <ul>
+                    <li>Limited Email Support</li>
+                    <li>Unlimited Data Transfer</li>
+                    <li>10GB Local Storage</li>
+                </ul>
+                <a href="" class="button">Sign Up</a>
+            </div>
+            <div class="grid-1-5 col-md-4">
+                <h2>Startup</h2>
+                <h3><sup>$</sup>79<span class="small">/mo</span></h3>
+                <p>25,000 monthly visits</p>
+                <ul>
+                    <li>Limited Email Support</li>
+                    <li>Unlimited Data Transfer</li>
+                    <li>20GB Local Storage</li>
+                </ul>
+                <a href="" class="button">Sign Up</a>
+            </div>
+            <div class="grid-1-5 col-md-4">
+                <h2>Growth</h2>
+                <h3><sup>$</sup>179<span class="small">/mo</span></h3>
+                <p>75,000 monthly visits</p>
+                <ul>
+                    <li>Email Support</li>
+                    <li>Unlimited Data Transfer</li>
+                    <li>30GB Local Storage</li>
+                </ul>
+                <a href="" class="button">Sign Up</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- END - PRICE TABLE -->
+    <!-- CONTACT US -->
+    <section id="appointment1" class="parallax clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="sector">
+                    <h1 class="title">Contact Us</h1>
+                </div>
+                <div id="form-main">
+                    <div id="form-div">
+                        <form class="form" id="form1" method="post" onsubmit="return false">
+                            <p class="name">
+                                <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" required />
+                            </p>
+                            <p class="email">
+                                <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" required />
+                            </p>
+                            <p class="number">
+                                <input name="number" type="text" class="feedback-input" id="number" placeholder="Phone Number" required />
+                            </p>
+                            <p class="company">
+                                <input name="text" type="text" class="feedback-input" id="company" placeholder="Company" required />
+                            </p>
+                            <p class="website">
+                                <input name="text" type="text" class="feedback-input" id="website" placeholder="Website" required />
+                            </p>
+                            <p class="subject">
+                                <input name="text" type="text" class="feedback-input" id="subject" placeholder="Subject" required />
+                            </p>
+                            <p class="text">
+                                <textarea name="comment" class="feedback-input" id="comment" placeholder="Comment"></textarea>
+                            </p>
+                            <div id="msg" class="message"></div>
+                            <div class="submit">
+                                <input type="submit" value="Submit" id="button-blue" onclick="sendemail()" />
+                                <div class="ease"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END - CONTACT US -->
+    <!-- PARTNERS -->
+    <section id="partners" class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div id="pwraper" class="outer">
+                    <!-- Partner 1 -->
+                    <div class="inner">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="images/partner1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Partner 2 -->
+                    <div class="inner">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="images/partner1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Partner 3 -->
+                    <div class="inner">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="images/partner1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Partner 4 -->
+                    <div class="inner">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="images/partner1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Partner 5 -->
+                    <div class="inner">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="images/partner1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Partner 6 -->
+                    <div class="inner">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="images/partner1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END - PARTNERS -->
+    <!--ADDRESS -->
+    <section id="contact" class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="outer">
+                    <div class="inner col-md-4 col-lg-4">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <p class="address">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="inner col-md-4 col-lg-4">
+                        <div class="icon">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </div>
+                        <div class="phone">
+                            <p class="mob"><a href="tel:2147931132">214-793-1132</a></p>
+                        </div>
+                    </div>
+                    <div class="inner col-md-4 col-lg-4">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="message">
+                            <p class="email"><a href="mailto:anderson@moahco.com">anderson@moahco.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END - CONTACT US -->
+    <footer>
+        <!-- BOTTOM FOOTER -->
+        <section id="bottom" class="clearfix">
+            <div class="container">
+                <div class="row">
+
+                    <div class="inner col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <p class="copyright">Copyright 2018. Free Medical Billing</p>
+                    </div>
+                    <div class="inner col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="social-icon">
+                            <ul class="icons">
+                                <li>
+                                    <a class="facebook" href="#" tabindex="0"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" tabindex="0"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="#" tabindex="0"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li>
+                                    <a class="googleplus" href="#" tabindex="0"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="#" tabindex="0"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a class="email" href="#" tabindex="0"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a class="rss" href="#" tabindex="0"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END - BOTTOM FOOTER -->
+    </footer>
+
+    <!-- JavaScripts -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'></script>
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

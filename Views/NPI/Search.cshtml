@@ -1,0 +1,94 @@
+﻿@model List<FMBPublic.Model.NPISearchResult>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>NPI</h2>
+        <ul class="nav navbar-right panel_toolbox">
+            <li>
+                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#">Settings 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                       NPI
+                    </th>
+                    <th>
+                        LastName / Entity
+                    </th>
+                    <th>
+                        First & Middle
+                    </th>
+                    <th>
+                        Prefix
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        State
+                    </th>
+                    <th>
+                        Zip
+                    </th>
+                    <th>Taxonomy</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NPILong)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastNameOrEntity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstAndMiddle)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Prefix)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MailingAddress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.State)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Zip)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Taxonomy)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
