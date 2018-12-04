@@ -1,0 +1,9 @@
+﻿@font-face {
+    font-family: HelveticaNeueLTStd-Bd_w;
+    src: url("fonts/HelveticaNeueLTStd-Bd_w.woff") format("woff");
+}
+
+@font-face {
+    font-family: HelveticaNeueLTStd-Roman_u;
+    src: url("fonts/HelveticaNeueLTStd-Roman_u.woff") format("woff");
+}
